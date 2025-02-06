@@ -31,7 +31,7 @@ export default function Home() {
     }}>
       <h1 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <span>Proceed to Office365</span>
-        <Image src={logo3} alt="Office365 Small Logo" width={80} height={30} />
+        <Image src={logo3} alt="Office365 Small Logo" width={90} height={60} />
       </h1>
       <Image src={logo} alt="Office365 Logo" width={300} height={300} priority />
       <br />

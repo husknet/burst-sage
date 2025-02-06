@@ -33,7 +33,7 @@ export default function Home() {
         display: 'flex', 
         alignItems: 'center', 
         gap: '10px', 
-        fontSize: '24px'  // Reduced font size
+        fontSize: '14px'  // Reduced font size
       }}>
         <span>Proceed to Office365</span>
         <Image src={logo3} alt="Office365 Small Logo" width={90} height={60} />

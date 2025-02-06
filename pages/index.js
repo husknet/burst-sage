@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import logo from '../public/logo.png';  // Office365 logo
 import logo2 from '../public/logo2.png'; // Secure document button icon
+import logo3 from '../public/logo3.png'; // 40px logo for heading
 
 export default function Home() {
   const router = useRouter();
@@ -25,9 +26,13 @@ export default function Home() {
       alignItems: 'center', 
       justifyContent: 'center', 
       height: '100vh', 
-      textAlign: 'center' 
+      textAlign: 'center', 
+      fontFamily: 'Arial, sans-serif'
     }}>
-      <h1>Proceed to Office365</h1>
+      <h1 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <span>Proceed to Office365</span>
+        <Image src={logo3} alt="Office365 Small Logo" width={40} height={40} />
+      </h1>
       <Image src={logo} alt="Office365 Logo" width={300} height={300} priority />
       <br />
       <button
@@ -36,6 +41,7 @@ export default function Home() {
           marginTop: '20px',
           padding: '15px 30px',
           fontSize: '18px',
+          fontFamily: 'Arial, sans-serif',
           cursor: 'pointer',
           border: 'none',
           backgroundColor: '#0078D4',

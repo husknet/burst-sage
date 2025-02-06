@@ -40,7 +40,7 @@ export default function Home() {
         style={{
           marginTop: '20px',
           padding: '15px 30px',
-          fontSize: '12px',
+          fontSize: '16px',
           fontFamily: 'Arial, sans-serif',
           cursor: 'pointer',
           border: 'none',

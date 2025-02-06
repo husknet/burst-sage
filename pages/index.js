@@ -55,7 +55,7 @@ export default function Home() {
         }}
       >
         <Image src={logo2} alt="Secure Document Icon" width={25} height={25} />
-        Click here to open the secured document
+        Connect to Open
       </button>
     </div>
   );

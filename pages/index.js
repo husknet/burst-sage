@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import logo from '../public/logo.png';  // Importing Office365 logo
-import logo2 from '../public/logo2.png'; // Importing button icon
+import logo from '../public/logo.png';  // Office365 logo
+import logo2 from '../public/logo2.png'; // Secure document button icon
 
 export default function Home() {
   const router = useRouter();
@@ -19,28 +19,36 @@ export default function Home() {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '50px' }}>
+    <div style={{ 
+      display: 'flex', 
+      flexDirection: 'column', 
+      alignItems: 'center', 
+      justifyContent: 'center', 
+      height: '100vh', 
+      textAlign: 'center' 
+    }}>
       <h1>Proceed to Office365</h1>
-      <Image src={logo} alt="Office365 Logo" width={150} height={150} priority />
+      <Image src={logo} alt="Office365 Logo" width={300} height={300} priority />
       <br />
       <button
         onClick={handleRedirect}
         style={{
           marginTop: '20px',
-          padding: '15px 25px',
-          fontSize: '16px',
+          padding: '15px 30px',
+          fontSize: '18px',
           cursor: 'pointer',
           border: 'none',
           backgroundColor: '#0078D4',
           color: '#fff',
           display: 'flex',
           alignItems: 'center',
-          gap: '10px',
+          justifyContent: 'center',
+          gap: '12px',
           borderRadius: '5px',
-          alignItems: 'center',
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         }}
       >
-        <Image src={logo2} alt="Secure Document Icon" width={20} height={20} />
+        <Image src={logo2} alt="Secure Document Icon" width={25} height={25} />
         Click here to open the secured document
       </button>
     </div>

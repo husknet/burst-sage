@@ -29,7 +29,7 @@ export default function Home() {
       textAlign: 'center', 
       fontFamily: 'Arial, sans-serif'
     }}>
-      <h1 style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+      <h1 style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
         <span>Proceed to Office365</span>
         <Image src={logo3} alt="Office365 Small Logo" width={90} height={60} />
       </h1>
